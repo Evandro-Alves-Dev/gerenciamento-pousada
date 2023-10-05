@@ -1,0 +1,9 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #7e2726;
+    background-image: url("../img/background.png");
+    /* background-image: url("https://www.transparenttextures.com/patterns/black-thread.png"); */
+    background-repeat: repeat;
+}
