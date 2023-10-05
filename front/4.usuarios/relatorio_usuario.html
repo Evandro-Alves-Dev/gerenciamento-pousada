@@ -16,31 +16,73 @@
     <nav class="navbar bg-dark navbar-dark navbar-expand-lg p-2">
         <div class="container ">
             <a href="" class="navbar-brand d-flex align-items-center">
-                <img src="../img/logo.webp"> <p class="offset-3 text-center">Relatório de Usuário</p>
+                <img src="../img/logo.webp">
+                <p class="offset-3 text-center">Relatório de Usuário</p>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="menuNavbar">
                 <div>
-                    <a href="./atualizar_usuario.html">
-                    <button class="btn btn-primary" id="usuario">Atualizar usuário</button>
-                    </a>
                     <a href="./cadastro_usuario.html">
-                    <button class="btn btn-primary" id="acomodacao">Cadastrar usuário</button>
+                        <button class="btn btn-outline-info" id="cadastro_usuario">Cadastrar usuário</button>
                     </a>
-                    <a href="../home.html" class="text-decoration-none"><button class="btn btn-primary" id="reserva">Voltar pra a Home</button></a>
+                    <a href="./atualizar_usuario.html">
+                        <button class="btn btn-outline-info " id="atualizar_usuario">Atualizar usuário</button>
+                    </a>
+                    <a href="./relatorio_usuario.html">
+                        <button class="btn btn-outline-info active" id="relatorio_usuario">Relatório usuário</button>
+                    </a>
+                    <a href="../home.html" class="text-decoration-none"><button class="btn btn-outline-info"
+                            id="home">Voltar pra a Home</button></a>
                 </div>
-            </div>            
+            </div>
         </div>
     </nav>
 
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-9 bg-primary vh-100">Coluna 1</div>
-            <div class="col-3 bg-danger vh-100">Coluna 2
-
+            <div class="col-9 vh-100">
+                <form method="post" class="" id="formCadastroUsuario">
+                    <div class="row mt-3 p-3 g-2 text-black">
+                        <div class="col-12">
+                            <label for="nome" class="form-label">Nome Completo</label>
+                            <input type="text" class="form-control" id="nome">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-lg btn-dark">Buscar por Nome</button>
+                    </div>
+                    <hr class="text-bg-info border-3 mt-5">
+                    <div class="row mt-3 p-3 g-2 text-black">
+                        <div class="col-12">
+                            <label for="cpf" class="form-label">CPF</label>
+                            <input type="text" class="form-control" id="cpf">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-lg btn-dark">Buscar por CPF</button>
+                    </div>
+                    <hr class="text-bg-info border-3 mt-5">
+                    <div class="text-center mt-5">
+                        <button class="btn btn-lg btn-dark">Buscar todos Usuários</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-3">
+                <div class="row">
+                    <div class="col">
+                        <div class="card mt-5 g-2">
+                            <div class="card-body">
+                                <p> Aqui voce poderá buscar um usuário por <b>Nome</b> ou por <b>CPF</b> Ou ainda buscar
+                                    <b>todos os Usuários</b> cadastrados no sistema.
+                                </p>
+                            </div>
+                            <img src="../img/ypua3.jpg" alt="" class="card-img-bottom">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
