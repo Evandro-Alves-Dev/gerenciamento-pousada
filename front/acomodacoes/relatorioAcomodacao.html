@@ -22,20 +22,19 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="menuNavbar">
-                <div>
-                    <a href="./cadastro_usuario.html">
-                        <button class="btn btn-light " id="cadastro_usuario">Cadastrar usuário</button>
-                    </a>
-                    <a href="./atualizar_usuario.html">
-                        <button class="btn btn-light "  id="atualizar_usuario">Atualizar usuário</button>
-                    </a>
-                    <a href="./relatorio_usuario.html">
-                        <button class="btn btn-light active" id="relatorio_usuario">Relatório usuário</button>
-                    </a>
-                    <a href="../home.html" class="text-decoration-none"><button class="btn btn-light "
-                            id="home">Voltar pra a Home</button></a>
-                </div>
+            <div>
+              <a href="./cadastrarAcomodacao.html">
+                  <button class=" btn btn-light" id="cadastro_usuario">Cadastrar Acomodações</button>
+              </a>   
+              <a href="./atualizarAcomodacao.html">
+                  <button class=" btn btn-light" id="cadastro_usuario">Atualizar Acomodações</button>
+              </a>
+              <a href="./relatorioAcomodacao.html">
+                  <button class=" btn btn-light" id="cadastro_usuario">Relatorio Acomodações</button>
+              </a>                                    
+              <a href="../home.html" class="text-decoration-none">
+                  <button class=" btn btn-light" id="home">Voltar pra a Home</button>
+              </a>
             </div>
         </div>
     </nav>
@@ -47,26 +46,17 @@
                 <form method="post" class="" id="formCadastroUsuario">
                     <div class="row mt-3 p-3 g-2 text-black">
                         <div class="col-12">
-                            <label for="nome" class="form-label">Nome Completo</label>
+                            <label for="nome" class="form-label">Nº do quarto</label>
                             <input type="text" class="form-control" id="nome">
                         </div>
                     </div>
                     <div class="text-center">
-                        <button class="btn btn-lg btn-dark">Buscar por Nome</button>
+                        <button class="btn btn-lg btn-dark">Buscar por Nº do quarto</button>
                     </div>
-                    <hr class="text-bg-info border-3 mt-5">
-                    <div class="row mt-3 p-3 g-2 text-black">
-                        <div class="col-12">
-                            <label for="cpf" class="form-label">CPF</label>
-                            <input type="text" class="form-control" id="cpf">
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <button class="btn btn-lg btn-dark">Buscar por CPF</button>
-                    </div>
+                    
                     <hr class="text-bg-info border-3 mt-5">
                     <div class="text-center mt-5">
-                        <button class="btn btn-lg btn-dark">Buscar todos Usuários</button>
+                        <button class="btn btn-lg btn-dark">Buscar todos os quartos</button>
                     </div>
                 </form>
             </div>
@@ -75,11 +65,10 @@
                     <div class="col">
                         <div class="card mt-5 g-2">
                             <div class="card-body">
-                                <p> Aqui voce poderá buscar um usuário por <b>Nome</b> ou por <b>CPF</b> Ou ainda buscar
-                                    <b>todos os Usuários</b> cadastrados no sistema.
+                                <p> Aqui voce poderá buscar um quarto pelo <b>Nº do quarto</b>  Ou ainda buscar
+                                    <b>todos os Quartos</b> cadastrados no sistema.
                                 </p>
-                            </div>
-                            
+                            </div>                           
                         </div>
                     </div>
                 </div>
