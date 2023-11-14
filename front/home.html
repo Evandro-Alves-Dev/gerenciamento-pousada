@@ -1,128 +1,200 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style/style.css">
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <script
+      src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
     <title>Home</title>
-</head>
+  </head>
 
-<body>
-    <nav class="navbar bg-dark navbar-dark navbar-expand-lg p-2">
-        <div class="container ">
-            <a href="" class="navbar-brand d-flex align-items-center">
-                <img src="./img/logo.webp" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
-                <span class="navbar-toggler-icon"></span>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
+      <div class="container">
+        <a href="" class="navbar-brand d-flex align-items-center">
+          <a href="./home.html"> <img src="./img/logo.webp" alt="" /></a>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="menuNavbar"
+        >
+          <div class="dropdown">
+            <button
+              class="btn btn-primary dropdown-toggle btn btn-light"
+              data-bs-toggle="dropdown"
+              id="usuario"
+            >
+              Usuários
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="menuNavbar">
-                <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
-                        id="usuario">Usuários</button>
-                    <div class="dropdown-menu">
-                        <a href="./4.usuarios/cadastro_usuario.html" class="text-decoration-none">
-                            <button class="btn dropdown-item">Cadastrar usuário </button>
-                        </a>
-                        <a href="./4.usuarios/atualizar_usuario.html" class="text-decoration-none">
-                            <button class="btn dropdown-item">Atualizar usuário</button>
-                        </a>
-                        <a href="./4.usuarios/relatorio_usuario.html" class="text-decoration-none">
-                            <button class="btn dropdown-item">Relatório usuário</button>
-                        </a>
-                    </div>
-                    <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
-                        id="acomodacao">Acomodações</button>
-                    <div class="dropdown-menu">
-                        <button class="btn dropdown-item">Cadastrar acomodação</button>
-                        <button class="btn dropdown-item">Atualizar acomodação</button>
-                        <button class="btn dropdown-item">Relatório acomodação</button>
-                    </div>
-                    <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
-                        id="hospede">Hóspedes</button>
-                    <ul class="dropdown-menu">
-                        <button class="btn dropdown-item">Cadastrar hóspede</button>
-                        <button class="btn dropdown-item">Atualizar hóspede</button>
-                        <button class="btn accordion">Relatório hóspede</button>
-                    </ul>
-                    <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
-                        id="reserva">Reservas</button>
-                    <ul class="dropdown-menu">
-                        <button class="btn dropdown-item">Cadastrar reserva</button>
-                        <button class="btn dropdown-item">Atualizar reserva</button>
-                        <button class="btn dropdown-item">Relatório reserva</button>
-                    </ul>
-                </div>
+            <div class="dropdown-menu">
+              <a
+                href="./4.usuarios/cadastro_usuario.html"
+                class="text-decoration-none"
+              >
+                <button class="btn dropdown-item">Cadastrar usuário</button>
+              </a>
+              <a
+                href="./4.usuarios/atualizar_usuario.html"
+                class="text-decoration-none"
+              >
+                <button class="btn dropdown-item">Atualizar usuário</button>
+              </a>
+              <a
+                href="./4.usuarios/relatorio_usuario.html"
+                class="text-decoration-none"
+              >
+                <button class="btn dropdown-item">Relatório usuário</button>
+              </a>
             </div>
+            <button
+              class="btn btn-primary dropdown-toggle btn btn-light"
+              data-bs-toggle="dropdown"
+              id="acomodacao"
+            >
+              Acomodações
+            </button>
+            <div class="dropdown-menu">
+              <a
+                href="./acomodacoes/cadastrarAcomodacao.html"
+                class="text-decoration-none"
+              >
+                <button class="btn dropdown-item">
+                  Cadastrar acomodação
+                </button></a
+              >
+              <a
+                href="./acomodacoes/atualizarAcomodacao.html"
+                class="text-decoration-none"
+              >
+                <button class="btn dropdown-item">
+                  Atualizar acomodação
+                </button></a
+              >
+              <button class="btn dropdown-item">Relatório acomodação</button>
+            </div>
+            <button
+              class="btn btn-primary dropdown-toggle btn btn-light"
+              data-bs-toggle="dropdown"
+              id="hospede"
+            >
+              Hóspedes
+            </button>
+            <ul class="dropdown-menu">
+              <a href="./hospede/cadastroHospede.html">
+                <button class="btn dropdown-item">Cadastrar hóspede</button></a
+              >
+              <a href="./hospede/atualizarHospede.html">
+                <button class="btn dropdown-item">Atualizar hóspede</button>
+              </a>
+            </ul>
+            <button
+              class="btn btn-primary dropdown-toggle btn btn-light"
+              data-bs-toggle="dropdown"
+              id="reserva"
+            >
+              Reservas
+            </button>
+            <ul class="dropdown-menu">
+              <button class="btn dropdown-item">Cadastrar reserva</button>
+              <button class="btn dropdown-item">Atualizar reserva</button>
+              <button class="btn dropdown-item">Relatório reserva</button>
+            </ul>
+          </div>
         </div>
+      </div>
     </nav>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2">
-        <div class="col">
-            <div class="card text-bg-info">
-                <img src="./img/usuario.png" alt="" class="card-img-top vh-100">
-                <div class="card-body">
-                    <h6 class="card-subtitle lead fs-1 text-center">
-                        <a href="./4.usuarios/cadastro_usuario.html" class="text-decoration-none text-black">
-                            <p><img src="./img/usuario-icon.png" alt="">
-                                Usuários</p>
-                        </a>
-                    </h6>
-                </div>
-            </div>
+      <div class="col">
+        <div class="card text-bg-info">
+          <img src="./img/usuario.png" alt="" class="card-img-top vh-50" />
+          <div class="card-body">
+            <h6 class="card-subtitle lead fs-1 text-center">
+              <a
+                href="./4.usuarios/cadastro_usuario.html"
+                class="text-decoration-none text-black"
+              >
+                <p><img src="./img/usuario-icon.png" alt="" /> Usuários</p>
+              </a>
+            </h6>
+          </div>
         </div>
-        <div class="col">
-            <div class="card text-bg-info">
-                <img src="./img/acomodacao.jpg" alt="" class="card-img-top vh-100">
-                <div class="card-body">
-                    <h6 class="card-subtitle lead fs-1 text-center">
-                        <a href="#" class="text-decoration-none text-black">
-                            <p><img src="./img/acomodacao-icon.png" alt="">
-                                Acomodações
-                            </p>
-                        </a>
-                    </h6>
-                </div>
-            </div>
+      </div>
+      <div class="col">
+        <div class="card text-bg-info">
+          <img src="./img/acomodacao.jpg" alt="" class="card-img-top vh-50" />
+          <div class="card-body">
+            <h6 class="card-subtitle lead fs-1 text-center">
+              <a
+                href="./acomodacoes/cadastrarAcomodacao.html"
+                class="text-decoration-none text-black"
+              >
+                <p>
+                  <img src="./img/acomodacao-icon.png" alt="" />
+                  Acomodações
+                </p>
+              </a>
+            </h6>
+          </div>
         </div>
-        <div class="col">
-            <div class="card text-bg-info">
-                <img src="./img/hospede.png" alt="" class="card-img-top vh-100">
-                <div class="card-body">
-                    <h6 class="card-subtitle lead fs-1 text-center">
-                        <a href="#" class="text-decoration-none text-black">
-                            <p><img src="./img/hospede-icon.png" alt="">
-                                Hóspedes
-                            </p>
-                        </a>
-                    </h6>
-                </div>
-            </div>
+      </div>
+      <div class="col">
+        <div class="card text-bg-info">
+          <img src="./img/hospede.png" alt="" class="card-img-top vh-50" />
+          <div class="card-body">
+            <h6 class="card-subtitle lead fs-1 text-center">
+              <a
+                href="./hospede/cadastroHospede.html"
+                class="text-decoration-none text-black"
+              >
+                <p>
+                  <img src="./img/hospede-icon.png" alt="" />
+                  Hóspedes
+                </p>
+              </a>
+            </h6>
+          </div>
         </div>
-        <div class="col">
-            <div class="card text-bg-info">
-                <img src="./img/reserva.jpg" alt="" class="card-img-top vh-100">
-                <div class="card-body">
-                    <h6 class="card-subtitle lead fs-1 text-center">
-                        <a href="#" class="text-decoration-none text-black">
-                            <p><img src="./img/reserva-icon.png" alt="">
-                                Reservas
-                            </p>
-                        </a>
-                    </h6>
-                </div>
-            </div>
+      </div>
+      <div class="col">
+        <div class="card text-bg-info">
+          <img src="./img/reserva.jpg" alt="" class="card-img-top vh-50" />
+          <div class="card-body">
+            <h6 class="card-subtitle lead fs-1 text-center">
+              <a href="#" class="text-decoration-none text-black">
+                <p>
+                  <img src="./img/reserva-icon.png" alt="" />
+                  Reservas
+                </p>
+              </a>
+            </h6>
+          </div>
         </div>
+      </div>
     </div>
-</body>
-<footer class="p-2 bg-dark text-light text-center">
-    <p>
+  </body>
+  <!--  <footer class="p-2 bg-dark text-light text-center">
+     <p>
         Copyright &copy; 2023
     </p>
     </div>
-</footer>
-
+  </footer>-->
 </html>
